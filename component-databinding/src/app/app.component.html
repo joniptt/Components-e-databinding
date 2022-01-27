@@ -1,1 +1,50 @@
-<h3>Add new Servers or Blueprints!</h3>
+<!-- <div class="containner">
+  <app-title></app-title>
+  <app-servername></app-servername>
+  <app-serverblueprint></app-serverblueprint>
+  <div class="btns">
+    <div class="btns1">
+      <app-addserver></app-addserver>
+    </div>
+    <div class="btns2">
+      <app-addblueprint></app-addblueprint>
+    </div>
+  </div>
+</div> -->
+<div class="containner">
+  <p style="color: blue">Add Server or Blueprint!</p>
+  <div class="form-group">
+    <label for="name"
+      ><p><b>Server Name</b></p></label
+    >
+    <input type="text" class="form-control" [(ngModel)]="serverName" />
+  </div>
+  <div class="form-group">
+    <label for="name"
+      ><p><b>Server Content</b></p></label
+    >
+    <input type="text" class="form-control" [(ngModel)]="serverBlueprint" />
+  </div>
+  <div class="btns">
+    <div class="btns1">
+      <button (click)="addServer()" class="btn btn-primary">Add Server</button>
+    </div>
+    <div class="btns2">
+      <button (click)="addBlueprint()" class="btn btn-primary">
+        Add Server Blueprint
+      </button>
+    </div>
+  </div>
+  <hr />
+  <div [hidden]="" *ngIf="serverName || serverBlueprint != ''">
+    <div *ngFor="let server of servers" class="card">
+      <div class="card-header">TestServer</div>
+      <div
+        [ngClass]="server.type === 'server' ? 'serverRed' : 'serverBlue'"
+        class="card-body"
+      >
+        {{ server.name }}
+      </div>
+    </div>
+  </div>
+</div>
