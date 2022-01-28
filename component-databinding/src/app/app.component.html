@@ -1,4 +1,9 @@
 <div class="containner">
-  <app-inputserver></app-inputserver>
-  <app-inputblueprint></app-inputblueprint>
+  <app-inputserver
+    (addBlueprint)="onBlueprintAdd($event)"
+    (addServers)="onServerAdd($event)"
+  ></app-inputserver>
+  <div class="srvList">
+    <app-serverslist [srvElement]="parentServers"></app-serverslist>
+  </div>
 </div>

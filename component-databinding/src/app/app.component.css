@@ -2,5 +2,16 @@
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+.btns {
+  display: flex;
+  margin-left: 50px;
+}
+.btns .btn1 {
+  margin-right: 10px;
+}
+.srvList {
+  margin-top: 20px;
+  padding-bottom: 20px;
 }

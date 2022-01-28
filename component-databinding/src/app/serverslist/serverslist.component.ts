@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-serverslist',
   templateUrl: './serverslist.component.html',
   styleUrls: ['./serverslist.component.css'],
 })
-export class ServerslistComponent implements OnInit {
-  servers = [];
-  constructor() {}
+export class ServerslistComponent {
+  @Input('srvElement') servers: { type: string; name: string };
 
-  ngOnInit(): void {}
+  constructor() {}
 }

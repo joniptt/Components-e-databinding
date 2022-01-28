@@ -2,6 +2,25 @@
   <label for="name"
     ><p><b>Server Name</b></p></label
   >
-  <input type="text" class="form-control" [(ngModel)]="serverName" />
-  <app-addserver [parentName]="serverName"></app-addserver>
+  <input type="text" class="form-control" [(ngModel)]="childServer" />
+  <div class="containner"></div>
+</div>
+<div class="form-group">
+  <label for="name">
+    <p>
+      <b>Server Content</b>
+    </p>
+  </label>
+  <input type="text" class="form-control" [(ngModel)]="childBlueprint" />
+  <div class="cont"></div>
+</div>
+<div class="containner">
+  <div class="btn1">
+    <button (click)="addNewServer()" class="btn btn-primary">Add Server</button>
+  </div>
+  <div class="btn2">
+    <button (click)="addNewBlueprint()" class="btn btn-primary">
+      Add Server Blueprint
+    </button>
+  </div>
 </div>

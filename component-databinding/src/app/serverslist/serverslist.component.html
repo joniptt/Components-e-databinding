@@ -1,12 +1,11 @@
-<div [hidden]="!showServers">
-    <div *ngFor="let server of servers" class="card">
-      <div class="card-header">TestServer</div>
-      <div
-        [ngClass]="server.type === 'server' ? 'serverRed' : 'serverBlue'"
-        class="card-body"
-      >
-        {{ server.name }}
-      </div>
+<div class="containner">
+  <div *ngFor="let server of servers" class="card">
+    <div class="card-header">TestServer</div>
+    <div
+      [ngClass]="server.type === 'server' ? 'serverRed' : 'serverBlue'"
+      class="card-body"
+    >
+      {{ server.name }}
     </div>
   </div>
 </div>
