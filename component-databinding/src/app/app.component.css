@@ -4,18 +4,3 @@
   margin-left: 50px;
   margin-top: 30px;
 }
-.btns {
-  display: flex;
-}
-.btns .btns1 {
-  margin-right: 10px;
-}
-.card {
-  margin-top: 20px;
-}
-.serverRed {
-  color: red;
-}
-.serverBlue {
-  color: blue;
-}
